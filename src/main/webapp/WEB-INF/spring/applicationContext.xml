@@ -28,37 +28,37 @@
 	</bean>
 	
 	<bean	id="userController"
-			class="com.ktdsuniv.user.web.UserController">
+			class="com.ktdsuniv.admin.user.web.UserController">
 		<property name="userService" ref="userService"/>		
 	</bean>
 
 	<bean	id="boardController"
-			class="com.ktdsuniv.board.web.BoardController">
+			class="com.ktdsuniv.admin.board.web.BoardController">
 		<property name="boardService" ref="boardService"/>
 	</bean>
 	
 	<bean	id="replyController"
-			class="com.ktdsuniv.board.web.ReplyController">
+			class="com.ktdsuniv.admin.board.web.ReplyController">
 		<property name="replyService" ref="replyService"/>		
 	</bean>
 	
 	<bean	id="projectController"
-			class="com.ktdsuniv.project.web.ProjectController">
+			class="com.ktdsuniv.admin.project.web.ProjectController">
 		<property name="projectService" ref="projectService"/>		
 	</bean>
 
 	<bean	id="lectureController"
-			class="com.ktdsuniv.lecture.web.LectureController">
+			class="com.ktdsuniv.admin.lecture.web.LectureController">
 		<property name="lectureService" ref="lectureService"/>		
 	</bean>
 
 	<bean	id="roomController"
-			class="com.ktdsuniv.room.web.RoomController">
+			class="com.ktdsuniv.admin.room.web.RoomController">
 		<property name="roomService" ref="roomService"/>		
 	</bean>
 	
 	<bean	id="seatController"
-			class="com.ktdsuniv.room.web.SeatController">
+			class="com.ktdsuniv.admin.room.web.SeatController">
 		<property name="seatService" ref="seatService"/>		
 	</bean>
 
