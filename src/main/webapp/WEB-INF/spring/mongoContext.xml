@@ -25,17 +25,17 @@
 	</bean>
 	
 	<bean 	id="logDaoMongoDB"
-			class="com.ktdsuniv.normal.common.mongo.dao.impl.LogDaoMongoDB">
+			class="common.mongo.dao.impl.LogDaoMongoDB">
 		<property name="mongoTemplate" ref="mongoTemplate" />		
 	</bean>
 	
 	<bean 	id="mongoDBLogger"
-			class="com.ktdsuniv.normal.common.mongo.logger.MongoDBLogger">
+			class="common.mongo.logger.MongoDBLogger">
 		<property name="logDao" ref="logDaoMongoDB" />		
 	</bean>
 	
 	<bean 	id="mongoLogger"
-			class="com.ktdsuniv.normal.common.mongo.logger.MongoLogger">
+			class="common.mongo.logger.MongoLogger">
 		<property name="mongoDBLogger" ref="mongoDBLogger" />
 	</bean>
 

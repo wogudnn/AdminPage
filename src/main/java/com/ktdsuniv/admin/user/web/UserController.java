@@ -1,6 +1,7 @@
 package com.ktdsuniv.admin.user.web;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.ktdsuniv.admin.user.service.UserService;
 
@@ -12,6 +13,11 @@ public class UserController {
 	
 	public void setUserService(UserService userService) {
 		this.userService = userService;
+	}
+	
+	@RequestMapping("/test")
+	public String test(){
+		return "/test";
 	}
 	
 }
