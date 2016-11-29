@@ -34,8 +34,11 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry combineaccessrules="false" kind="src" path="/KtdsSchema"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/InstructorPage"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/NomalPage"/>
+=======
+>>>>>>> ff7ef5db5980d74237a649f2e48cc777b5c787f2
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
