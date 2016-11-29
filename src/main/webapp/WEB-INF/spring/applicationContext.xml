@@ -22,18 +22,11 @@
 		mapping="/img/**" />
 
 	<bean id="viewResolver"
-<<<<<<< HEAD
 		  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
   		<property name="prefix" value="/WEB-INF/view/"/>
   		<property name="suffix" value=".jsp"/>
   	</bean>
-=======
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/view/" />
-		<property name="suffix" value=".jsp" />
-	</bean>
->>>>>>> c932c2679d9059bb1f12b795d17e2bcf9ed25269
-	
+  	
 	<bean	id="userController"
 			class="com.ktdsuniv.user.web.UserController">
 		<property name="userService" ref="userService"/>		
