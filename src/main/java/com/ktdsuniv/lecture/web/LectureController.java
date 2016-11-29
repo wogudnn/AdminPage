@@ -1,6 +1,8 @@
 package com.ktdsuniv.lecture.web;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.ktdsuniv.lecture.service.LectureService;
 
@@ -13,4 +15,12 @@ public class LectureController {
 		this.lectureService = lectureService;
 	}
 	
+	@RequestMapping("/registLecture")
+	public ModelAndView registLecturePage() {
+		
+		ModelAndView view = new ModelAndView();
+		view.setViewName("lecture/registLecture");
+		
+		return view;
+	}
 }
